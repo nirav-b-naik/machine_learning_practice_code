@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 import surprise
 
-ratings = pd.read_csv("/home/dai/Desktop/dai2022/modulewise/practicalmachinelearning/Cases/ml-100k/u.data",sep='\t',names= ['uid', 'iid', 'rating','Date'])
+ratings = pd.read_csv("../Cases/ml-100k/u.data",sep='\t',names= ['uid', 'iid', 'rating','Date'])
 ratings.head()
 
 ratings.drop('Date',axis=1,inplace=True)
